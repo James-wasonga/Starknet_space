@@ -37,13 +37,13 @@ mod Bank {
         bank.accountName
     }
 
-    impl BankAccountPrintTrait of PrintTrait<BankAccount> {
-        fn print(self: BankAccount){
-            self.accountName.print();
-            self.bankBalance.print();
-        }
-    }
-}
+//     impl BankAccountPrintTrait of PrintTrait<BankAccount> {
+//         fn print(self: BankAccount){
+//             self.accountName.print();
+//             self.bankBalance.print();
+//         }
+//     }
+// }
 
 use Bank::{BankAccount, BankStorage, createAccounts, displayLength};
 use debug::PrintTrait;
