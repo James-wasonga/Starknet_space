@@ -3,26 +3,26 @@ mod Account {
     fn checkBalance(){}
 }
 
-mod Transaction {
-    fn deposit(){}
-    fn withdraw(){}
-    fn transfer(){}
-}
+// mod Transaction {
+//     fn deposit(){}
+//     fn withdraw(){}
+//     fn transfer(){}
+// }
 mod Bank {
     use array::ArrayTrait;
     use debug::PrintTrait;
 
 
     #[derive(Copy, Drop)]
-    struct BankAccount{
-        bankBalance: u32,
-        accountName: felt252,
-    }
+    // struct BankAccount{
+    //     bankBalance: u32,
+    //     accountName: felt252,
+    // }
 
     #[derive(Drop)]
-    struct BankStorage {
-        bankAccounts: Array<BankAccount>
-    }
+    // struct BankStorage {
+    //     bankAccounts: Array<BankAccount>
+    // }
     
     fn createAccounts(accountName: felt252, ref bank: BankStorage){
         let mut bankStorage = BankStorage {bankAccounts: ArrayTrait::new()};
